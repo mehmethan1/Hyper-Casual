@@ -141,7 +141,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &14903953
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1236,6 +1236,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panel: {fileID: 14903952}
   effect: {fileID: 7885963788640494290, guid: 27fd337ce52a0874b8c033c0ccd5304d, type: 3}
+  Ripple: {fileID: 963194230}
 --- !u!1 &942043847
 GameObject:
   m_ObjectHideFlags: 0
@@ -1341,6 +1342,7 @@ GameObject:
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
   - component: {fileID: 963194229}
+  - component: {fileID: 963194230}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1430,6 +1432,21 @@ MonoBehaviour:
   Score1: {fileID: 2077052779}
   Score2: {fileID: 1462096824}
   pauseButton: {fileID: 334679133}
+--- !u!114 &963194230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8546f33f275b28046b5c629cf457e305, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RippleMaterial: {fileID: 2100000, guid: 90d86e79197f7dd45bed546553e41232, type: 2}
+  MaxAmount: 50
+  Friction: 0.9
 --- !u!1 &983424756
 GameObject:
   m_ObjectHideFlags: 0
@@ -1934,7 +1951,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1756525580}
   m_Enabled: 1
-  m_Alpha: 0.0036981367
+  m_Alpha: 1
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0

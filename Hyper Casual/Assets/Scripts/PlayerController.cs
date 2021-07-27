@@ -12,6 +12,8 @@ public class PlayerController : MonoBehaviour
     public GameObject panel;
     public GameObject effect;
 
+    public RipplePostProcessor Ripple;
+
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody>();
@@ -20,7 +22,7 @@ public class PlayerController : MonoBehaviour
     
     void Update()
     {
-        MovePlayer();        
+        MovePlayer();
     }
 
     public void MovePlayer()
@@ -41,7 +43,7 @@ public class PlayerController : MonoBehaviour
     {
         if(target.tag == "Obstacle")
         {
-            Instantiate(effect, transform.position, Quaternion.identity);
+            Ripple.Rıpple();
 
             Time.timeScale = 0f;
 

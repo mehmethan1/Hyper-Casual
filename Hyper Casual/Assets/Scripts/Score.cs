@@ -25,8 +25,6 @@ public class Score : MonoBehaviour
             Destroy(target.gameObject);
 
             AddScore();
-
-            Debug.Log("Score");
         }
     }
 
